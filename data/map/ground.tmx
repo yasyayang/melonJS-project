@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2017.07.26" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#000032" nextobjectid="29">
+ <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
+  <image source="../img/map/area01_level_tiles.png" width="640" height="241"/>
+ </tileset>
+ <tileset firstgid="141" name="metatiles32x32" tilewidth="32" tileheight="32" tilecount="5" columns="5">
+  <image source="../img/map/metatiles32x32.png" width="160" height="32"/>
+  <tile id="0" type="solid"/>
+ </tileset>
+ <layer name="foreground" width="20" height="15">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAqAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACsAAAADAAAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAMAAAAZAAAAAAAAAAAAAAAAAAAABAAAACsAAAADAAAAAwAAAAMAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACoAAAADAAAAAwAAAAMAAAAqAAAAKgAAACoAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAqAAAAKgAAACoAAAAqAAAAKwAAAAUAAAAYAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAcAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAGQAAACwAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAtAAAA
+  </data>
+ </layer>
+ <objectgroup name="Entities">
+  <object id="9" name="mainPlayer" x="60" y="4" width="64" height="64">
+   <properties>
+    <property name="framewidth" value="64"/>
+    <property name="image" type="file" value="../img/sprite/gripe_run_right.png"/>
+   </properties>
+  </object>
+  <object id="16" name="CoinEntity" x="325" y="225" width="52" height="46">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="17" name="CoinEntity" x="389" y="185" width="52" height="46">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="19" name="CoinEntity" x="454" y="216" width="52" height="46">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="20" name="CoinEntity" x="265" y="308" width="52" height="46">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+  <object id="21" name="CoinEntity" x="533" y="335" width="52" height="46">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" type="file" value="../img/sprite/spinning_coin_gold.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="collision">
+  <object id="28" type="solid" x="70" y="329">
+   <polyline points="0,0 83,-1 85,63 189,65 191,32 256,34 258,3 321,4 320,-35 373,-33 374,68 562,66 563,139 -60,142 -60,68 4,67 1,2"/>
+  </object>
+ </objectgroup>
+</map>
